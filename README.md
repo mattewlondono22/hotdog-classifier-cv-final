@@ -46,3 +46,7 @@ numpy
 Created for Computer Vision final, May 2025.
 
 <!-- GitAds-Verify: LE3BAXN8I855V9XIY44D3Q7ETUUGFC5I -->
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=mattewlondono22/hotdog-classifier-cv-final@github)](https://gitads.dev/v1/ad-track?source=mattewlondono22/hotdog-classifier-cv-final@github)
+
