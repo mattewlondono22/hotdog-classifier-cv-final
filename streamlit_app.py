@@ -11,7 +11,7 @@ def load_model():
 
 st.set_page_config(page_title="Hotdog? Not Hotdog?", page_icon="🌭", layout="centered")
 st.title("🌭 Hotdog? Not Hotdog?")
-st.write("Upload an image and see if it's a hotdog! (Only 100% sure hotdogs will be called hotdogs.)")
+st.write("Upload an image and see if it's a hotdog! Only if 'hotdog' is the top-1 prediction and confidence is above 90%. Top-3 predictions shown for transparency.")
 
 with st.spinner("Loading model..."):
     model = load_model()
@@ -32,7 +32,7 @@ if uploaded_file:
     for i, (label, name, prob) in enumerate(top_preds):
         st.write(f"Top {i+1}: {name} ({label}) — {prob*100:.2f}%")
 
-    # Only call it hotdog if it's the top-1 prediction and confidence is high (now > 90%)
+    # Only call it hotdog if it's the top-1 prediction and confidence is high (> 90%)
     top_label, top_name, top_prob = top_preds[0]
     if "hotdog" in top_name.lower() and top_prob > 0.9:
         st.success("🌭 Hotdog!")
