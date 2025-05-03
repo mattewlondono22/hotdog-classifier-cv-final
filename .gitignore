@@ -45,4 +45,10 @@ logs/
 
 # OS specific files
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Gradio and local deployment files
+app.py
+model.py
+Dockerfile
+.gradio/
