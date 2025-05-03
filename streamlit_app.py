@@ -32,9 +32,9 @@ if uploaded_file:
     for i, (label, name, prob) in enumerate(top_preds):
         st.write(f"Top {i+1}: {name} ({label}) — {prob*100:.2f}%")
 
-    # Only call it hotdog if it's the top-1 prediction and confidence is high
+    # Only call it hotdog if it's the top-1 prediction and confidence is high (now > 90%)
     top_label, top_name, top_prob = top_preds[0]
-    if "hotdog" in top_name.lower() and top_prob > 0.7:
+    if "hotdog" in top_name.lower() and top_prob > 0.9:
         st.success("🌭 Hotdog!")
     else:
         st.error("Not Hotdog.")
