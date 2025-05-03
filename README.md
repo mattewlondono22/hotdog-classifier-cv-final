@@ -44,3 +44,5 @@ numpy
 
 ---
 Created for Computer Vision final, May 2025.
+
+<!-- GitAds-Verify: LE3BAXN8I855V9XIY44D3Q7ETUUGFC5I -->
