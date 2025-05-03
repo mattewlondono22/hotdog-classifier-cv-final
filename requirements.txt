@@ -2,3 +2,4 @@ streamlit
 tensorflow
 pillow
 numpy
+# hotdog (project keyword for clarity)
