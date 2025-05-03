@@ -52,3 +52,10 @@ app.py
 model.py
 Dockerfile
 .gradio/
+
+# Private keys and credentials
+*.pem
+*.key
+.env
+*.env
+credentials.json
